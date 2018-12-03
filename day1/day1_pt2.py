@@ -5,7 +5,7 @@ frequency = 0
 
 keep_going = True
 
-while (keep_going):
+while keep_going:
 
     with open('input.txt') as f:
         lines = f.read().splitlines()
@@ -24,9 +24,11 @@ while (keep_going):
 
         if cnt[frequency] == 2:
 
-            keep_going = False
             print(frequency)
-            exit
+            keep_going = False
+            break
+            
+            
 
 
 
